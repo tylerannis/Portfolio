@@ -9,47 +9,35 @@ namespace Potfolio.Controllers
     public class ContactController : Controller
     {
         Models.TylerEntities db = new Models.TylerEntities();
+        
         //
         // GET: /Contact/
 
-        public ActionResult Index()
-        {
-            return View(db.Comments);
-        }
+     
 
         [HttpGet]
-        public ActionResult Edit(int ID)
+        public ActionResult Index()
         {
-            return View(db.Comments.Find(ID));
+            return View(new Models.Comment());
         }
 
         [HttpPost]
-        public ActionResult Edit(int ID, Models.Comment contactForm)
+        public ActionResult Index(Models.Comment contactForm)
         {
             //tell the DB context that the contact form needs to be updated
-            db.Entry(contactForm).State = System.Data.EntityState.Modified;
+            db.Comments.Add(contactForm);
             //save changes
             db.SaveChanges();
             //kick user back to list
 
             return RedirectToAction("Index", "Home");
         }
-        public ActionResult Delete(int id)
+        public ActionResult Thanks()
         {
-            return View(db.Comments.Find(id));
+            return View();
+           
         }
-
-        public ActionResult DeleteConfirm(int ID)
-        {
-            //get the form to delet from the database
-            Models.Comment formToDelete = db.Comments.Find(ID);
-            //remove from formtoDelete
-            db.Comments.Remove(formToDelete);
-
-            db.SaveChanges();
-            //kick them back to the list
-            return RedirectToAction("Index", "Home");
-        }
+       
         
     }
 }

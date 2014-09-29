@@ -26,6 +26,6 @@ C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\bin\System.We
 C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\bin\System.Web.WebPages.xml
 C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\bin\System.Web.WebPages.Razor.xml
-C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\obj\Debug\Potfolio.csprojResolveAssemblyReference.cache
 C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\obj\Debug\Potfolio.dll
 C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\obj\Debug\Potfolio.pdb
+C:\Users\Technologist\Documents\GitHub\Portfolio\Potfolio\Potfolio\obj\Debug\Potfolio.csprojResolveAssemblyReference.cache

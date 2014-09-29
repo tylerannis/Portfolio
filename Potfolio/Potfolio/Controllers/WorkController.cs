@@ -11,7 +11,7 @@ namespace Potfolio.Controllers
         //
         // GET: /Work/
 
-        public ActionResult Images()
+        public ActionResult Index()
         {
             return View();
         } 

@@ -2,14 +2,37 @@
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
-    background-color: #fff;
+    background-color: #ffa500;
 }
 
 header, footer, nav, section {
+    text-align:center;
     display: block;
+   
 }
+header, footer{
+    display:inline-block;
+    background-color: white;
+}
+.headernav {
+    text-align: center;
+    margin-left: 500px;
+    display: inline-block;
+    border: 2px solid white;
+    padding:15px;
+    font-size:larger;
+    background-color: #6767e4;
+}
+nav:hover{
+    font-size:large;
+    color: green;
 
-
+}
+a{
+    background-color: white;
+    margin: 30px;
+    color: black;
+}
 
 
 /* Styles for basic forms
@@ -66,7 +89,7 @@ textarea {
     box-sizing:border-box;
     float: left;
    display:inline-block;
-    border: solid black;
+    border: solid white;
     width: 33.3%;
 }
 .Work {
@@ -79,14 +102,15 @@ textarea {
     box-sizing:border-box;
     float: right;
    display:inline-block;
-    border: 4px  solid black;
+    border: 4px  solid white;
     width: 33.3%;
 }
 .AIN{
    
     display:inline-block;
-    border:2px double orange;
-    border-width:medium;
+    border:2px double white;
+    border-width: thick;
+    font-size:large;
 }
 .topleft, .topright{
     box-sizing:border-box;
@@ -101,3 +125,17 @@ textarea {
     display: inline-block;
     border: 5px solid gray;
 }
+.firstname, .lastname{
+    display: inline-block;
+   
+}.email, .phone{
+     display: inline-block;
+     
+ }
+ .thanks{
+     text-size-adjust:auto;
+     border: 4px dashed white;
+ }
+ .HI{
+     max-height: 60%;
+ }

@@ -13,14 +13,14 @@
             <h1>Tyler Annis</h1>
         
     </div>
-    <nav>
+    <nav class="headernav">
         <a href="@Url.Action("Index","Home")">Home</a>
        &nbsp;|&nbsp;
         @* &nbsp; makes a space in the text that won't break the line *@
         <!-- These are html comments and if you inspect the element these are the only comments that show up-->
         <a href="@Url.Action("Index", "About")">About</a>
         &nbsp;|&nbsp;
-        <a href="@Url.Action("Images", "Work")">Work</a>
+        <a href="@Url.Action("Index", "Work")">Work</a>
         &nbsp|&nbsp
         <a href="@Url.Action("Index", "Contact")">Contact Form</a>
     </nav>
@@ -33,14 +33,14 @@
         <p>
             Copyright 2014 Tyler Annis
         </p>
-         <nav>
+         <nav class="footernav">
         <a href="@Url.Action("Index","Home")">Home</a>
        &nbsp;|&nbsp;
         @* &nbsp; makes a space in the text that won't break the line *@
         <!-- These are html comments and if you inspect the element these are the only comments that show up-->
         <a href="@Url.Action("Index", "About")">About</a>
         &nbsp;|&nbsp;
-        <a href="@Url.Action("Images", "Work")">Work</a>
+        <a href="@Url.Action("Index", "Work")">Work</a>
         &nbsp|&nbsp
         <a href="@Url.Action("Index", "Contact")">Contact Form</a>
     </nav>
