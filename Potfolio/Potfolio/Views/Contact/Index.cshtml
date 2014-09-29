@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Potfolio.Models.Comment>
+@{
+    ViewBag.Title = "Comments";
+}
+
+<h2>List of Comments</h2>
+@foreach (var item in Model)
+{
+         <div>
+    @item.FirstName - @item.Comment1 <br />
+        <a href="@Url.Action("Delete", "Contact", new {ID = item.ComentID})">Delete</a>
+        &nbsp|&nbsp
+         <a href="@Url.Action("Edit", "Contact", new {ID = item.ComentID})">Add a Comment</a>
+             
+        </div>
+}
+  
+
+

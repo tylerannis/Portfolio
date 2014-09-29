@@ -1,0 +1,46 @@
+﻿@model Potfolio.Models.Comment
+@{
+    ViewBag.Title = "Add a Comment";
+}
+
+<h2>Add a Comment</h2>
+<form action="@Url.Action("Add a Comment", "Contact")" method="post">
+    @*add a hidden field to hold the ID*@
+    <br />
+    <span>
+    @Html.HiddenFor(x => x.ComentID)
+    </span>
+        <div class="firstname">
+        @*create lable, text box, and the validation for each proprety*@
+        @Html.LabelFor(x => x.FirstName)
+        @Html.TextBoxFor(x => x.FirstName)
+        @Html.ValidationMessageFor(x => x.FirstName)
+    </div>
+
+    <div class="lastname">
+        @Html.LabelFor(x => x.LastName)
+        @Html.TextBoxFor(x => x.LastName)
+        @Html.ValidationMessageFor(x => x.LastName)
+    </div>
+      <div class="email">
+        @Html.LabelFor(x => x.Email)
+        @Html.TextAreaFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+      <div class="phone">
+        @Html.LabelFor(x => x.PhoneNumber)
+        @Html.TextAreaFor(x => x.PhoneNumber)
+        @Html.ValidationMessageFor(x => x.PhoneNumber)
+    </div>
+      <div class="comment">
+        @Html.LabelFor(x => x.Comment1)
+        @Html.TextAreaFor(x => x.Comment1)
+        @Html.ValidationMessageFor(x => x.Comment1)
+    </div>
+
+    <input type="submit" value="Click Me Homes!" />
+</form>
+@*ADD a reference to jQuery Validation*@
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    }
