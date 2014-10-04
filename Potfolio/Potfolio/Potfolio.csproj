@@ -135,32 +135,49 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Comment.cs">
-      <DependentUpon>ContactForm.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CommentValidation.cs" />
-    <Compile Include="Models\ContactForm.Context.cs">
+    <Compile Include="Models\ContactMe.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContactForm.Context.tt</DependentUpon>
+      <DependentUpon>ContactMe.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactForm.cs">
+    <Compile Include="Models\ContactMe.cs">
+      <DependentUpon>ContactMe.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactMe.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContactForm.tt</DependentUpon>
+      <DependentUpon>ContactMe.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactForm.Designer.cs">
+    <Compile Include="Models\ContactMe1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContactForm.edmx</DependentUpon>
+      <DependentUpon>ContactMe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\2014-08-07-awesomeness.jpg" />
+    <Content Include="Content\Images\4wheelme.jpg" />
+    <Content Include="Content\Images\battlecode.jpg" />
+    <Content Include="Content\Images\battleDisplay.jpg" />
+    <Content Include="Content\Images\battlegrid.jpg" />
+    <Content Include="Content\Images\boulder.jpg" />
     <Content Include="Content\Images\code.jpg" />
+    <Content Include="Content\Images\giant%27sme.jpg" />
+    <Content Include="Content\Images\goldengatebridge.jpg" />
+    <Content Include="Content\Images\meprof.jpg" />
+    <Content Include="Content\Images\NumberGame.jpg" />
+    <Content Include="Content\Images\numbergamecode.jpg" />
+    <Content Include="Content\Images\numberwin.jpg" />
+    <Content Include="Content\Images\sanfran.png" />
+    <Content Include="Content\Images\sanfranbridge.jpg" />
     <Content Include="Content\Images\TreeofGeers.jpg" />
+    <Content Include="Content\Images\triviacode.jpg" />
+    <Content Include="Content\Images\triviacode2.jpg" />
+    <Content Include="Content\Images\Untitled.jpg" />
     <Content Include="Content\Images\work.jpg" />
+    <Content Include="Content\Images\yinyangsoft.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -217,22 +234,22 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <EntityDeploy Include="Models\ContactForm.edmx">
+    <EntityDeploy Include="Models\ContactMe.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ContactForm.Designer.cs</LastGenOutput>
+      <LastGenOutput>ContactMe.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\ContactForm.Context.tt">
+    <Content Include="Models\ContactMe.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContactForm.edmx</DependentUpon>
-      <LastGenOutput>ContactForm.Context.cs</LastGenOutput>
+      <DependentUpon>ContactMe.edmx</DependentUpon>
+      <LastGenOutput>ContactMe.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ContactForm.edmx.diagram">
-      <DependentUpon>ContactForm.edmx</DependentUpon>
+    <Content Include="Models\ContactMe.edmx.diagram">
+      <DependentUpon>ContactMe.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\ContactForm.tt">
+    <Content Include="Models\ContactMe.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContactForm.edmx</DependentUpon>
-      <LastGenOutput>ContactForm.cs</LastGenOutput>
+      <DependentUpon>ContactMe.edmx</DependentUpon>
+      <LastGenOutput>ContactMe1.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -248,6 +265,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -266,6 +284,10 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\Thanks.cshtml" />
+    <Content Include="Views\Work\BattleShip.cshtml" />
+    <Content Include="Views\Work\Trivia.cshtml" />
+    <Content Include="Views\Work\Guess.cshtml" />
+    <Content Include="Views\Work\Dragon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

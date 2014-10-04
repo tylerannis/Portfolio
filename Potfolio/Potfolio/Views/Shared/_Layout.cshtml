@@ -15,24 +15,26 @@
     </div>
     <nav class="headernav">
         <a href="@Url.Action("Index","Home")">Home</a>
-       &nbsp;|&nbsp;
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         @* &nbsp; makes a space in the text that won't break the line *@
         <!-- These are html comments and if you inspect the element these are the only comments that show up-->
         <a href="@Url.Action("Index", "About")">About</a>
-        &nbsp;|&nbsp;
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <a href="@Url.Action("Index", "Work")">Work</a>
-        &nbsp|&nbsp
+       &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <a href="@Url.Action("Index", "Contact")">Contact Form</a>
     </nav>
     </header>
+    <section id="container">
     @RenderBody()
-
+         </section>
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+       
     <footer>
-        <p>
-            Copyright 2014 Tyler Annis
-        </p>
+        <p class="foot">
+            
+        
          <nav class="footernav">
         <a href="@Url.Action("Index","Home")">Home</a>
        &nbsp;|&nbsp;
@@ -44,6 +46,8 @@
         &nbsp|&nbsp
         <a href="@Url.Action("Index", "Contact")">Contact Form</a>
     </nav>
+            Copyright 2014 Tyler Annis
+            </p>
     </footer>
 </body>
 </html>

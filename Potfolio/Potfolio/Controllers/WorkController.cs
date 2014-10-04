@@ -14,7 +14,22 @@ namespace Potfolio.Controllers
         public ActionResult Index()
         {
             return View();
-        } 
-
+        }
+        public ActionResult BattleShip()
+        {
+            return View();
+        }
+        public ActionResult Trivia()
+        {
+            return View();
+        }
+        public ActionResult Guess()
+        {
+            return View();
+        }
+        public ActionResult Dragon()
+        {
+            return View();
+        }
     }
 }

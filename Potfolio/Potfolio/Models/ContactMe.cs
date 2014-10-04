@@ -12,13 +12,13 @@ namespace Potfolio.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Comment
+    public partial class ContactMe
     {
-        public int ComentID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public int ContactID { get; set; }
+        public string First_Name { get; set; }
+        public string Last_Name { get; set; }
         public string Email { get; set; }
-        public Int32 PhoneNumber { get; set; }
-        public string Comment1 { get; set; }
+        public Nullable<int> Phone { get; set; }
+        public string Comment { get; set; }
     }
 }

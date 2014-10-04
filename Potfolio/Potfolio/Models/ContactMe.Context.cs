@@ -13,10 +13,10 @@ namespace Potfolio.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TylerEntities : DbContext
+    public partial class spTylerEntities : DbContext
     {
-        public TylerEntities()
-            : base("name=TylerEntities")
+        public spTylerEntities()
+            : base("name=spTylerEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace Potfolio.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<Comment> Comments { get; set; }
+        public DbSet<ContactMe> ContactMes { get; set; }
     }
 }
