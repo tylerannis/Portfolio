@@ -166,7 +166,9 @@
     <Content Include="Content\Images\code.jpg" />
     <Content Include="Content\Images\giant%27sme.jpg" />
     <Content Include="Content\Images\goldengatebridge.jpg" />
+    <Content Include="Content\Images\imagesTardis.jpg" />
     <Content Include="Content\Images\meprof.jpg" />
+    <Content Include="Content\Images\narutp.jpg" />
     <Content Include="Content\Images\NumberGame.jpg" />
     <Content Include="Content\Images\numbergamecode.jpg" />
     <Content Include="Content\Images\numberwin.jpg" />

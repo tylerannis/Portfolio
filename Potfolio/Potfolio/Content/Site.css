@@ -116,6 +116,7 @@ h3{
 .aboutme {
     box-sizing:border-box;
     float: left;
+    height: 250px;
    display:inline-block;
     border: solid 6px white;
     width: 28%;
@@ -135,6 +136,7 @@ h3{
 .Work {
     box-sizing:border-box;
     display:inline-block;
+    height: 250px;
     width: 28%;
     border: solid 6px white;
     background-color: #c20000;
@@ -152,6 +154,7 @@ h3{
 .Contact{
     box-sizing:border-box;
     float: right;
+    height: 250px;
    display:inline-block;
     border: solid 6px white;
     background-color: #c20000;
